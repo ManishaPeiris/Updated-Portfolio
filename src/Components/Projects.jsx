@@ -5,7 +5,7 @@ const projects = [
     name: "Weather App",
     description:
       "Built a weather forecast web app using React.js and the OpenWeather API. Implemented real-time city-based search with dynamic weather icons, temperature, humidity, and wind speed display. Optimized API integration and state management for fast updates, while ensuring a clean, responsive UI with accurate Celsius-based data visualization.",
-    liveView: "https://sage-clafoutis-902668.netlify.app/",
+    liveView: "https://cool-duckanoo-0a1c7b.netlify.app/",
     image: "/src/images/Project 9.png",
   },
   {
