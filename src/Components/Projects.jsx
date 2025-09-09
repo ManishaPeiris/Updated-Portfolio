@@ -2,6 +2,13 @@ import React, { useState } from "react";
 
 const projects = [
   {
+    name: "Calculator App",
+    description:
+      "A responsive and interactive web-based calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator features a clean, modern design, mobile-friendly layout, and smooth background animation for an enhanced user experience.",
+    liveView: "https://courageous-halva-57b401.netlify.app/",
+    image: "/src/images/Project 10.png",
+  },
+  {
     name: "Weather App",
     description:
       "Built a weather forecast web app using React.js and the OpenWeather API. Implemented real-time city-based search with dynamic weather icons, temperature, humidity, and wind speed display. Optimized API integration and state management for fast updates, while ensuring a clean, responsive UI with accurate Celsius-based data visualization.",
@@ -138,23 +145,24 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Prev / Next buttons */}
+     {/* Prev / Next buttons */}
       <div className="flex justify-center mt-12 gap-6">
         <button
           onClick={handlePrev}
           disabled={currentPage === 0}
-          className="px-6 py-2 bg-pink-600 text-white rounded-lg shadow hover:bg-pink-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed"
+          className="px-6 py-2 bg-pink-600 text-white rounded-lg shadow hover:bg-pink-700 transition disabled:bg-transparent disabled:text-gray-400 disabled:cursor-not-allowed"
         >
           &#8592; Prev
         </button>
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages - 1}
-          className="px-6 py-2 bg-pink-600 text-white rounded-lg shadow hover:bg-pink-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed"
+          className="px-6 py-2 bg-pink-600 text-white rounded-lg shadow hover:bg-pink-700 transition disabled:bg-transparent disabled:text-gray-400 disabled:cursor-not-allowed"
         >
           Next &#8594;
         </button>
       </div>
+
     </section>
   );
 };
