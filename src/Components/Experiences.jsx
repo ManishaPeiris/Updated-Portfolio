@@ -4,7 +4,7 @@ import techwoxLogo from "/src/images/Company-Logo.jpg"; // replace with your com
 const experiences = [
   {
     company: "TechWox Solutions (Pvt) Ltd",
-    role: "Frontend Developer Intern",
+    role: "Frontend Developer Intern (Completed)",
     period: "April 2025 - October 2025",
     description: [
       "Developed responsive frontend components using HTML, CSS, JavaScript, React, Vite, and Tailwind CSS.",
@@ -14,6 +14,7 @@ const experiences = [
       "Learned best practices in frontend development and version control using GitHub and Jira.",
     ],
     logo: techwoxLogo,
+    serviceLetter: "/src/documents/TechWox-Service-Letter.pdf", // path to your PDF
   },
 ];
 
@@ -55,11 +56,25 @@ const Experiences = () => {
               <p className="text-gray-500 text-center mb-4">{exp.period}</p>
 
               {/* Description */}
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
+              <ul className="list-disc list-inside space-y-2 text-gray-600 mb-6">
                 {exp.description.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}
               </ul>
+
+              {/* View Service Letter Button */}
+              {exp.serviceLetter && (
+                <div className="text-center">
+                  <a
+                    href={exp.serviceLetter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-pink-600 text-white px-5 py-2 rounded-lg hover:bg-pink-700 transition-all"
+                  >
+                    View Service Letter
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const projects = [
-  {
-    name: "Calculator App",
+   {
+    name: "LMS-System",
     description:
-      "A responsive and interactive web-based calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator features a clean, modern design, mobile-friendly layout, and smooth background animation for an enhanced user experience.",
-    liveView: "https://courageous-halva-57b401.netlify.app/",
-    image: "/src/images/Project 10.png",
+      "Built a full-stack Learning Management System (LMS) using HTML, CSS, JavaScript, PHP, and MySQL. Designed and implemented user authentication, course management, and student enrollment features. Developed dynamic dashboards for students and administrators to manage lessons, assignments, and progress tracking. Integrated CRUD operations for efficient data handling, ensuring a responsive UI and secure database interactions for smooth, real-time learning experiences.",
+    liveView: " https://lms-system.free.nf/?i=1 ",
+    image: "/src/images/Project 11.png",
   },
   {
     name: "Weather App",
@@ -21,6 +21,13 @@ const projects = [
       "Developed a Pomodoro Timer web app with customizable work and break sessions. Integrated dynamic background videos, dark/light mode toggle, and audio notifications, while optimizing state management in React for smooth real-time updates.",
     liveView: "https://gregarious-stardust-08f572.netlify.app/",
     image: "/src/images/Project 8.png",
+  },
+   {
+    name: "Calculator App",
+    description:
+      "A responsive and interactive web-based calculator built using HTML, CSS, and JavaScript. It supports basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator features a clean, modern design, mobile-friendly layout, and smooth background animation for an enhanced user experience.",
+    liveView: "https://courageous-halva-57b401.netlify.app/",
+    image: "/src/images/Project 10.png",
   },
   {
     name: "Disney Characters",
